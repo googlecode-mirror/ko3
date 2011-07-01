@@ -1,1 +1,4 @@
-欢迎dd：<?php echo $user->name; ?>
+欢迎dd：<?php 
+echo $user->name;
+
+?>

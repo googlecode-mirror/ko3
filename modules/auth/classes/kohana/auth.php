@@ -22,6 +22,7 @@ abstract class Kohana_Auth {
 	{
 		if ( ! isset(Auth::$_instance))
 		{
+			
 			// Load the configuration for this type
 			$config = Kohana::config('auth');
 
@@ -35,9 +36,10 @@ abstract class Kohana_Auth {
 
 			// Create a new session instance
 			Auth::$_instance = new $class($config);
+			
 		}
-
 		return Auth::$_instance;
+		
 	}
 
 	protected $_session;
